@@ -2,6 +2,10 @@
 
 OFT is a Python CLI tool that transfers files and folders optically by converting payload data into QR frames (TX mode) and reconstructing the original data from a video or webcam stream (RX mode).  I don't do this for a living, just needed a tool that I couldn't find or understand to code for.  If it is useful to you, awesome.
 
+***DISCLAIMER***
+
+I do not write code for a living, and thought I tried to make this reasonably stable for myself, I make no promises about functionality in your individual use case.  I do not have the available free time to hand-hold through debugging, sorry.  I am also not a security researcher, so I probably created a stack of vulnerabilites I didn't even know to look for in my code, sorry - but that's why I'm providing it as un-compiled Python, if you are a security researcher, I'll happily consider patches.
+
 Current version: **1.0.0**
 
 ## How OFT Works
