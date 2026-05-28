@@ -42,13 +42,13 @@ python OFT.py -v
 ### TX example
 
 ```bash
-python OFT.py -TX --source ./Example_Folder_Input -o ./Test_Output/roundtrip_tx.mp4 -p GooberSnookums
+python OFT.py -TX --source ./Example_Folder_Input -o ./Test_Output/roundtrip_tx.mp4 -p UltraSecretPassword
 ```
 
 ### RX example
 
 ```bash
-python OFT.py -RX --video ./Test_Output/roundtrip_tx.mp4 -o ./Test_Output/recovered -p GooberSnookums
+python OFT.py -RX --video ./Test_Output/roundtrip_tx.mp4 -o ./Test_Output/recovered -p UltraSecretPassword
 ```
 
 ### Show dependency license report
