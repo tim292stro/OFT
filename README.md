@@ -1,6 +1,6 @@
 # OFT (Optical File Transfer)
 
-OFT is a Python CLI tool that transfers files and folders optically by converting payload data into QR frames (TX mode) and reconstructing the original data from a video or webcam stream (RX mode).
+OFT is a Python CLI tool that transfers files and folders optically by converting payload data into QR frames (TX mode) and reconstructing the original data from a video or webcam stream (RX mode).  I don't do this for a living, just needed a tool that I couldn't find or understand to code for.  If it is useful to you, awesome.
 
 Current version: **1.0.0**
 
@@ -15,10 +15,10 @@ Current version: **1.0.0**
 
 ### RX pipeline (video/webcam -> recovered output)
 
-1. Read QR frames from a video file or webcam stream.
+1. Read QR frames from a video file or webcam stream.  Note that a camera with a telephoto lens makes this a long-distance transfer.  I have also considered but not yet had a need to implement taking in web streams.  Feels wasteful to do it this way if you already have a network connection, but there is a case that a mutli-cast stream just sending a file that a bunch of connected clients might want to receive could be usefull, so I might still do this later (my leisure, no time-line proposed or committed to).  Similarly there is nothing stopping anyone from pointing more than one camera at a single display playing the TX generated file to the same end, or abusing the temporal-reps command line option to set up an all-day video output that people could walk up and grab a file - that was why I implemented the password option, to at least access control the source.
 2. Decode and de-duplicate chunk IDs.
 3. Rebuild `payload.7z.001` from chunk sequence.
-4. Extract with 7-Zip using optional password.
+4. Extract with 7-Zip using optional password.  Note that I have not exhaustively tested password length and complexity - keep it to UTF-8.
 5. Write recovered file/folder to the requested output path.
 
 ## Documentation
@@ -55,8 +55,9 @@ python OFT.py --license-report
 
 ## Notes
 
-- Use matching password and source video between TX and RX.
-- If RX decodes all chunks but extraction fails, check password correctness and archive integrity.
+- Obviously use matching password and source video between TX and RX, this code uses the built-in AES encryption of 7-Zip when a password is specified, to my knowledge there is no back door to this.  I have only tested this with UTF-8 characters, and have no interest in adding more functionality here.
+- If RX decodes all chunks but the extraction fails, check password correctness and archive integrity, try adding temporal repetitions if code blocks are missed.
+- If you wish to have this execute as a native application, try pycompiler (no support for this given here)
 
 ## Requirements
 
