@@ -20,7 +20,7 @@ Validate end-to-end TX/RX behavior under normal and robustness-oriented conditio
 Behavior:
 
 - generate_random_2kb_bin_file writes exactly 2048 bytes of random data to a .bin file.
-- create_oft_test_folder creates OFT_Test and writes two unique random 2048-byte .bin files.
+- create_oft_test_folder creates OFT_Test folder and writes two unique random 2048-byte .bin files into it.
 
 ### Test bench runner
 
@@ -34,7 +34,7 @@ The runner imports OFT.py, creates fixtures, then runs TX->RX verification cases
 
 1. Create a timestamped bench artifact root under Test_Output.
 2. Generate one standalone random 2KB file.
-3. Create OFT_Test containing two unique random 2KB files.
+3. Create OFT_Test folder containing two unique random 2KB files.
 
 ### Stage 2: Local MP4 round-trip (first)
 
@@ -56,7 +56,7 @@ Total local cases: 2 source types x 2 x 2 x 2 = 16.
 Per-case verification:
 
 - File source: SHA-256 of source vs recovered file.
-- Folder source: recursive file-manifest SHA-256 comparison.
+- Folder source: recursive file-manifest SHA-256 comparison or source vs recovered folder.
 
 ### Stage 3: Optional webcam playback/capture
 
@@ -126,3 +126,4 @@ Exit code:
 - Use --camera-only to rerun only the camera phase without rerunning the local matrix.
 - Camera tests depend on physical setup (display-to-camera visibility, focus, exposure).
 - Robustness options are TX-only: --messy, --temporal-reps, --add-garbage.
+- This is a test bench, not the tool.  I spent most of my development time on the tool.  It shows. Sorry.
