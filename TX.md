@@ -22,9 +22,9 @@ Use TX when you want to package source data into a sequence of QR chunks and ren
 - `--ffmpeg-bin <path-or-name>`
 - `-p, --password <text>`
 - `--qr-workers <int>` (`0` uses all CPU cores)
-- `--messy` (shuffle QR frame order for robustness testing)
 - `--temporal-reps <int>` (repeat the QR sequence N times; default `1`)
 - `--add-garbage <int>` (append N garbage QR frames for robustness testing)
+- `--messy` (Simple Fisher-Yates shuffle QR frame order for out-of order robustness testing, happens after temporal and garbage options if used)
 
 ## TX usage examples
 
