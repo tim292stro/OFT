@@ -69,7 +69,7 @@ python OFT.py --license-report
 
 ## Requirements
 
-- Python 3.10+
+- Python 3.10+, if you're using <3.9... why? Who hurt you?
 - 7-Zip executable available on PATH, or configured in OFT persistence
 - ffmpeg executable available on PATH for TX mode, or configured in OFT persistence
 
