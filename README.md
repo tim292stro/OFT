@@ -25,7 +25,7 @@ Current version: **1.0.0**
 4. Extract with 7-Zip using optional password.  Note that I have not exhaustively tested password length and complexity - keep it to UTF-8.
 5. Write recovered file/folder to the requested output path.
 
-###Note###
+### Note ###
 
 There are some options about 7-zip and ffmpeg when they are not discoverable in the PATH variable which I find are annoying to keep typing out, so this coede will create a persistence file (JSON) in the OFT.py script's working directory so it can just use it next call without having to type it out.  It's nothing crazy or risky, just some key:value pairs in human readable form.  I got tired of walking up to a mahcine that didn't have the environment setup well for this to work without a lot of fidgeting, so I brute forced it.  On that topic, same thing (attempt-auto-fix) with package dependancies.  You're welcome I guess.
 
