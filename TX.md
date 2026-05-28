@@ -1,6 +1,6 @@
 # TX Mode (Transmit)
 
-TX mode converts a file or folder into a QR video that can later be decoded by RX mode. It is up to the user how that video file gets off the source machine.
+TX mode converts a file or folder into a QR video that can later be decoded by RX mode. It is up to the user how that video file gets off the source machine. Personally I recommend ffplay fullscreen since this codebase already relies on ffmpeg, and it gets installed already by the package.
 
 Back to summary: [README](README.md)
 
