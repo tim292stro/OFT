@@ -1,0 +1,46 @@
+OFT Dependency License Report (v1.0.0)
+Generated: 2026-05-28 14:32:35
+
+Compliance Checklist
+- Include this report/notices file with distributed binaries or source bundles.
+- Preserve OFT's MIT license notice and copyright attribution.
+- Include Apache-2.0 notices for OpenCV/zxing-cpp and bundled third-party notices.
+- Include Pillow MIT-CMU and qrcodegen MIT license notices.
+- Verify external executable licenses (7-Zip, ffmpeg) for your chosen binaries.
+
+Python Dependency Details
+- opencv-python
+  version: 4.13.0.92
+  license field: Apache 2.0
+  license classifiers:
+    - License :: OSI Approved :: Apache Software License
+  declared license files:
+    - C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\cv2\LICENSE-3RD-PARTY.txt
+    - C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\opencv_python-4.13.0.92.dist-info\LICENSE-3RD-PARTY.txt
+    - C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\cv2\LICENSE.txt
+    - C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\opencv_python-4.13.0.92.dist-info\LICENSE.txt
+
+- zxing-cpp
+  version: 3.0.0
+  license field: Apache-2.0 (inferred from license file)
+  license classifiers:
+    - License :: OSI Approved :: Apache Software License
+  inference source: C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\zxing_cpp-3.0.0.dist-info\licenses\LICENSE
+  declared license files:
+    - C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\zxing_cpp-3.0.0.dist-info\licenses\LICENSE
+
+- Pillow
+  version: 12.2.0
+  license field: MIT-CMU (inferred from license file)
+  license classifiers:
+    - License :: OSI Approved :: MIT License
+  inference source: C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pillow-12.2.0.dist-info\licenses\LICENSE
+  declared license files:
+    - C:\Users\tistromm\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\pillow-12.2.0.dist-info\licenses\LICENSE
+
+- qrcodegen
+  version: 1.8.0
+  license field: MIT License
+  license classifiers:
+    - License :: OSI Approved :: MIT License
+  declared license files: <none>
