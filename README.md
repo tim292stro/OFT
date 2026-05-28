@@ -11,7 +11,7 @@ Current version: **1.0.0**
 1. Collect the source input (single file or folder).
 2. Build an encrypted/split 7-Zip payload (`payload.7z.001`, etc.).
 3. Pack each split part into framed QR chunks.
-4. Render QR frames to a video via ffmpeg.
+4. Render QR frames to a video via ffmpeg.  Note, this entire process is a data expansion.  The video file is very likely going to be much larger than your source file or folder.  Wield this sword with care on your system, you must have the space to generate the intermediate files and the final video.  Obviously the larger the file, the longer the video will be, so this method becomes impractical for larger files simply due to the risk of missed codes on the RX end.
 
 ### RX pipeline (video/webcam -> recovered output)
 
