@@ -61,7 +61,7 @@ python OFT.py -RX --video ./Test_Output/roundtrip_tx.mp4 -o ./Test_Output/recove
 python OFT.py --license-report
 ```
 
-## Notes
+## More notes, because this is how my mind works, welcome to the mess
 
 - Obviously use matching password and source video between TX and RX, this code uses the built-in AES encryption of 7-Zip when a password is specified, to my knowledge there is no back door to this.  I have only tested this with UTF-8 characters, and have no interest in adding more functionality here.
 - If RX decodes all chunks but the extraction fails, check password correctness and archive integrity, try adding temporal repetitions if code blocks are missed.
