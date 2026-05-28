@@ -1,6 +1,6 @@
 # OFT (Optical File Transfer)
 
-OFT is a Python CLI tool that transfers files and folders optically by converting payload data into QR frames (TX mode) and reconstructing the original data from a video or webcam stream (RX mode).  I don't do this for a living, just needed a tool that I couldn't find or understand to code for.  If it is useful to you, awesome.
+OFT is a Python CLI tool that enables transfering files and folders optically by converting payload data into QR frames (TX mode) as a video file to be played and reconstructing the original data from a video or webcam stream (RX mode).  I don't do this for a living, just needed a tool that I couldn't find or understand to code for.  If it is useful to you, awesome.
 
 ***DISCLAIMER***
 
