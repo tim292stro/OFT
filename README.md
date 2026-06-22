@@ -4,7 +4,7 @@ OFT is a Python CLI tool that enables transfering files and folders optically by
 
 ***DISCLAIMER***
 
-I do not write code for a living, and thought I tried to make this reasonably stable for myself, I make no promises about functionality in your individual use case.  I do not have the available free time to hand-hold through debugging, sorry.  I am also not a security researcher, so I probably created a stack of vulnerabilites I didn't even know to look for in my code, sorry - but that's why I'm providing it as un-compiled Python, if you are a security researcher, I'll happily consider patches.
+I do not write code for a living, and though I tried to make this reasonably stable for myself, I make no promises about functionality in your individual use case.  I do not have the available free time to hand-hold through debugging, sorry.  I am also not a security researcher, so I probably created a stack of vulnerabilites I didn't even know to look for in my code, sorry - but that's why I'm providing it as un-compiled Python, if you are a security researcher, I'll happily consider patches.
 
 Current version: **1.0.0**
 
